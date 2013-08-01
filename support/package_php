@@ -55,7 +55,9 @@ build_command=$(cat <<BUILD_CMD
     && cd ../php-${php_version} && ./configure --prefix=/app/vendor/php \
     --with-config-file-path=/app/vendor/php/etc \
     --with-config-file-scan-dir=/app/vendor/php/etc/conf.d \
+    --with-dom \
     --with-gd \
+    --with-mcrypt \
     --with-mysql \
     --with-mysqli \
     --with-pdo-mysql \
